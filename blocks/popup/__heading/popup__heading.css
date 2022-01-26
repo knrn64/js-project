@@ -1,0 +1,16 @@
+.popup__heading {
+    max-width: 330px;
+    /* margin: 34px 36px 54px; */
+    /* margin-top: 34px; */
+    margin-bottom: 40px; /* когда я ставлю 50пкс, что-то не так */
+    position: relative;
+    
+
+    font-family: Inter Bold;
+    /* font-style: normal;
+    font-weight: 900; */
+    font-size: 24px;
+    line-height: 29px;
+
+    color: #000000;
+}

@@ -1,0 +1,24 @@
+.gallery__button-remove {
+    background: url(../../../images/bin-icon.svg) no-repeat;
+    background-size: 19px;
+
+    cursor: pointer;
+    width: 19px;
+    height: 19px;
+    display: inline-block;
+    border: none;
+
+    position: absolute;
+    right: 18px;
+    top: 18px;
+
+    -webkit-transition: opacity 150ms ease-in-out;
+    -moz-transition: opacity 150ms ease-in-out;
+    -ms-transition: opacity 150ms ease-in-out;
+    -o-transition: opacity 150ms ease-in-out;
+    transition: opacity 150ms ease-in-out;
+}
+
+.gallery__button-remove:hover {
+    opacity: 0.5;
+}

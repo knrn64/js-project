@@ -1,0 +1,8 @@
+.gallery__card-body {
+    width: 246px;
+    /* height: 79px; */
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+    
+}

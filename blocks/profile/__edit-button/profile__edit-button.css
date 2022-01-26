@@ -1,0 +1,15 @@
+.profile__edit-button {
+    background: url(../../../images/edit_icon.svg) no-repeat;
+    background-size: 10px;
+    background-position: center;
+
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    border: 1px solid #ffffff;
+
+    position: absolute;
+    right: -35px;
+    top: 15px;
+}

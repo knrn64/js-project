@@ -1,0 +1,15 @@
+.gallery__card {
+    width: 282px;
+    height: 361px;
+
+    background: #FFFFFF;
+    border-radius: 10px;
+
+    /* margin-bottom: 20px; */
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}

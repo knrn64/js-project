@@ -1,0 +1,30 @@
+@import url(./__card/gallery__card.css);
+@import url(./__button-like/gallery__button-like.css);
+@import url(./__button-like_active/gallery__button-like_active.css);
+@import url(./__button-remove/gallery__button-remove.css);
+@import url(./__card-body/gallery__card-body.css);
+@import url(./__card-name/gallery__card-name.css);
+@import url(./__image/gallery__image.css);
+
+
+.gallery {
+    margin-top: 50px;
+    max-width: 282px;
+
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: space-between; */
+    gap: 17px;
+
+    padding-bottom: 20px;
+
+
+}
+
+
+@media screen and (min-width: 768px) {
+    .gallery {
+        max-width: 880px;
+        margin: auto;
+    }
+}

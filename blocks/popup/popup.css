@@ -1,0 +1,39 @@
+@import url(./__container/popup__container.css);
+@import url(./__heading/popup__heading.css);
+@import url(./__form-fieldset/popup__form-fieldset.css);
+@import url(./__form-field/popup__form-field.css);
+@import url(./__submit-button/popup__submit-button.css);
+@import url(./__form-el/popup__form-el.css);
+@import url(./__close-button/popup__close-button.css);
+@import url(./__form-field-error/popup__form-field-error.css);
+@import url(./__form-field_type_error/popup__form-field_type_error.css);
+
+/* for -  7. Smooth Popup Opening and Closing */
+
+.popup {
+    width: 100%;
+    /* height: 100vh; */
+    position: fixed;
+    z-index: 1;
+
+    transition: opacity 100ms ease-out;
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+
+
+
+    align-items: center;
+    justify-content: center;
+
+    left: 0;
+    top: 0;
+    /* width: 100%;
+    height: 100%; */
+
+    /* overflow: auto; */
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+}

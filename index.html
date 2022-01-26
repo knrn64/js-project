@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/global.css">
+    <link rel="stylesheet" href="styles/index.css">
+    <title>Around the U.S.</title>
+</head>
+
+<body>
+    <header class="header">
+        <img class="header__logo" src="images/logo.png" alt="Website Logo: Around the U.S.">
+    </header>
+    <main>
+        <div class="profile">
+            <img src="images/avatar.jpg" alt="User avatar" class="profile__avatar">
+            <div class="profile__info">
+                <div class="profile__info-name-container">
+                    <p class="profile__info-name">User name</p>
+                    <button class="profile__edit-button"></button>
+                </div>
+                <p class="profile__info-title">Title</p>
+            </div>
+            <button class="profile__add-card-button">
+                <div class="profile__add-card-button-overlay"></div>
+            </button>
+        </div>
+
+        <div class="gallery">
+            <template id="card-template">
+                <li class="gallery__card">
+                    <img class="gallery__image" src="#">
+                    <button class="gallery__button-remove"></button>
+                    <div class="gallery__card-body">
+                        <p class="gallery__card-name">Yosemite Valley</p>
+                        <button class="gallery__button-like"></button>
+                    </div>
+                </li>
+            </template>
+        </div>
+
+        <div class="popup popup_edit-profile">
+            <div class="popup__container">
+                <button class="popup__close-button popup__close-button_edit-profile"></button>
+                <p class="popup__heading">Edit profile</p>
+                <form class="popup__form-el popup__form-el_edit-profile" novalidate>
+                    <fieldset class="popup__form-fieldset">
+                        <input id="profile-name" type="text" placeholder="Name" class="popup__form-field" minlength="2" maxlength="40" required>
+                        <span id="profile-name-error" class="popup__form-field-error"></span>
+                        <input id="profile-title" type="text" placeholder="About me" class="popup__form-field" minlength="2" maxlength="200" required>
+                        <span id="profile-title-error" class="popup__form-field-error"></span>
+                    </fieldset>
+                    <button class="popup__submit-button popup__submit-button_edit-profile">Save</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="popup popup_add-place">
+            <div class="popup__container">
+                <button class="popup__close-button popup__close-button_add-place"></button>
+                <p class="popup__heading">Add your place</p>
+                <form class="popup__form-el popup__form-el_add-place" novalidate>
+                    <fieldset class="popup__form-fieldset">
+                        <input id="place-name" type="text" placeholder="Name" class="popup__form-field" minlength="1" maxlength="30" required>
+                        <span id="place-name-error" class="popup__form-field-error"></span>
+                        <input id="place-image-url" type="url" placeholder="Insert link to image" class="popup__form-field" required>
+                        <span id="place-image-url-error" class="popup__form-field-error"></span>
+                    </fieldset>
+                    <button class="popup__submit-button">Add</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="popup image-popup">
+            <div class="image-popup__box">
+                <button class="popup__close-button popup__close-button_image-popup"></button>
+                <img src="#" alt="" class="image-popup__image">
+                <p class="image-popup__caption"></p>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <small>© 2021 konerini</small>
+    </footer>
+
+    <script src="./scripts/index.js"></script>
+    <script src="./scripts/validate.js"></script>
+</body>
+
+</html>

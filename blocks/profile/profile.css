@@ -1,0 +1,17 @@
+@import url(./__add-card-button/profile__add-card-button.css);
+@import url(./__add-card-button-overlay/profile__add-card-button-overlay.css);
+@import url(./__avatar/profile__avatar.css);
+@import url(./__edit-button/profile__edit-button.css);
+@import url(./__info-name-container/profile__info-name-container.css);
+@import url(./__info-name/profile__info-name.css);
+@import url(./__info-title/profile__info-title.css);
+@import url(./__info/profile__info.css);
+
+.profile {
+    display: flex;
+    justify-content: space-between;
+    max-width: 880px;
+    margin: auto;
+    padding-top: 36px;
+    padding-bottom: 46px;
+}

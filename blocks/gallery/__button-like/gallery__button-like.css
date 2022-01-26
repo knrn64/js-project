@@ -1,0 +1,20 @@
+.gallery__button-like {
+    background: url(../../../images/like-disabled.png) no-repeat;
+    background-size: 21px;
+
+    cursor: pointer;
+    width: 21px;
+    height: 19px;
+    display: inline-block;
+    border: none;
+
+    -webkit-transition: opacity 150ms ease-in-out;
+    -moz-transition: opacity 150ms ease-in-out;
+    -ms-transition: opacity 150ms ease-in-out;
+    -o-transition: opacity 150ms ease-in-out;
+    transition: opacity 150ms ease-in-out;
+}
+
+.gallery__button-like:hover {
+    opacity: 0.5;
+}
